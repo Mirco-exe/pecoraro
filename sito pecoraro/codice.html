@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pecoraro Website</title>
+    <link rel="stylesheet" href="pecoraro.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Benvenuto Pecoraro!</h1>
+        <button id="pecoraroButton">Clicca qui!</button>
+        <p id="message" class="hidden">MA CHE TE PREMI BRUTTO PECORARO!</p>
+        <img id="pecoraroImage" class="hidden" src="immagine.webp" alt="Immagine Pecoraro">
+    </div>
+
+    <script>
+        document.getElementById('pecoraroButton').addEventListener('click', function() {
+            // Nascondi il bottone e il titolo
+            document.getElementById('pecoraroButton').classList.add('hidden');
+            document.getElementById('title').classList.add('hidden');
+            
+            // Mostra il messaggio e l'immagine
+            document.getElementById('message').classList.remove('hidden');
+            document.getElementById('pecoraroImage').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
